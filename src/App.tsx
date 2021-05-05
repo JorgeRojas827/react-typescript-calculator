@@ -1,25 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Fragment } from 'react';
+import { Screen } from './components/Screen';
+import { Keyboard } from './components/Keyboard';
+import './app.scss'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <div className="bg-gray-700 w-screen h-screen flex justify-center items-center">
+        <div id="calculadora" className="w-80 h-80">
+          <Screen value = { "x" } />
+          <Keyboard />
+        </div>
+      </div> 
+    </Fragment>
   );
 }
 

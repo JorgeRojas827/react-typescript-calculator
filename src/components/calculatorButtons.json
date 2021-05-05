@@ -1,0 +1,76 @@
+{
+    "botones" : [
+        {
+            "value" : "%"
+        },
+        {
+            "value" : "CA"
+        },
+        {
+            "value" : "C"
+        },
+        {
+            "value" : "Retroceder"
+        },
+        {
+            "value" : "1/x"
+        },
+        {
+            "value" : "x^2"
+        },
+        {
+            "value" : "x^1/2"
+        },
+        {
+            "value" : "/"
+        },
+        {
+            "value" : "7"
+        },
+        {
+            "value" : "8"
+        },
+        {
+            "value" : "9"
+        },
+        {
+            "value" : "x"
+        },
+        {
+            "value" : "4"
+        },
+        {
+            "value" : "5"
+        },
+        {
+            "value" : "6"
+        },
+        {
+            "value" : "-"
+        },
+        {
+            "value" : "1"
+        },
+        {
+            "value" : "2"
+        },
+        {
+            "value" : "3"
+        },
+        {
+            "value" : "+"
+        },
+        {
+            "value" : "+/-"
+        },
+        {
+            "value" : "0"
+        },
+        {
+            "value" : "."
+        },
+        {
+            "value" : "="
+        }
+    ]
+}
