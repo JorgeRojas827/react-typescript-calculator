@@ -7,11 +7,10 @@ interface RootState {
 export const Screen = () => {
     
     const { currentValue } = useSelector((state: RootState)  => state.value)
-    console.log(typeof(currentValue))
 
     return (
-        <div className="w-full h-full rounded">
-            <h3> {  } </h3>
+        <div className="w-full p-10 h-full rounded text-right text-5xl font-semibold">
+            <h3> { currentValue } </h3>
         </div>
     )
 }
