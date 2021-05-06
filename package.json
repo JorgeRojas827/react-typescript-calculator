@@ -13,12 +13,13 @@
     "@types/react": "^17.0.5",
     "@types/react-dom": "^17.0.3",
     "@types/uuid": "^8.3.0",
-    "autoprefixer": "^9",
+    "axios": "^0.21.1",
     "node-sass": "^5.0.0",
-    "postcss": "^7",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-redux": "^7.2.4",
     "react-scripts": "4.0.3",
+    "redux": "^4.1.0",
     "typescript": "^4.2.4",
     "uuid": "^8.3.2",
     "web-vitals": "^1.1.1"
@@ -48,6 +49,8 @@
     ]
   },
   "devDependencies": {
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat"
+    "autoprefixer": "^9.8.6",
+    "postcss": "^7.0.35",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.1.2"
   }
 }

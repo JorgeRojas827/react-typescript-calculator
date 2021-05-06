@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import axios from 'axios';
 import { Button } from "./Button"
 
 interface valueInterface {
@@ -11,9 +12,8 @@ export const Keyboard = () => {
 
     const getData = async () => {
         try {
-            const data = await fetch("https://api.jsonbin.io/b/60921cfdd64cd16802aab207/1");
-            const res = await data.json();
-            setValues(res.botones)
+            const res = await axios.get("https://api.jsonbin.io/b/60921cfdd64cd16802aab207/1");
+            setValues(res.data.botones)
         } catch (err) {
             console.log("ERROR: ", err)
         }
@@ -24,7 +24,7 @@ export const Keyboard = () => {
     }, [])
 
     return (
-        <div className = "w-20 flex flex-row flex-wrap">
+        <div className="w-full h-full absolute grid grid-cols-4 gap-1 grid-flow-row ">
             { values.map((el: valueInterface) => {
                 return <Button button = { el.value } key = { el.key } />
             })}

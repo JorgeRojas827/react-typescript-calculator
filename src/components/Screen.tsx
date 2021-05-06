@@ -1,8 +1,17 @@
-export const Screen = (values?: any) => {
-    const { value } = values;
+import { useSelector } from 'react-redux';
+
+interface RootState {
+    value : any;
+}
+
+export const Screen = () => {
+    
+    const { currentValue } = useSelector((state: RootState)  => state.value)
+    console.log(typeof(currentValue))
+
     return (
-        <div>
-            <h3>{ value }</h3>
+        <div className="w-full h-full rounded">
+            <h3> {  } </h3>
         </div>
     )
 }
