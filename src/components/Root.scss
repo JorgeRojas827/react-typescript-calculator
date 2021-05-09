@@ -1,0 +1,12 @@
+$button-primary : #EC5990;
+$button-hover-color : #D1D5DB;
+
+input:last-of-type {
+    background-color:$button-primary;
+    border-color: $button-primary;
+    color: white;
+
+    &:hover {
+        border-color: $button-hover-color;
+    }
+}

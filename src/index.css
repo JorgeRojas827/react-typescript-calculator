@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.bg-fullwidth {
+    background-color: #081229;
+}

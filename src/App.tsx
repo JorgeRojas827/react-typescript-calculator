@@ -6,8 +6,8 @@ import './app.scss'
 function App() {
   return (
     <Fragment>
-      <div className=" w-screen h-screen flex justify-center items-center">
-        <div id="calculator" className="bg-gray-200 rounded w-1/4 h-5/6">
+      <div className="dark:bg-gray-900 w-screen h-screen flex justify-center items-center">
+        <div id="calculator" className="bg-gray-200 px-5 pb-5 dark:bg-gray-700 rounded w-1/4 h-5/6">
           <div id = "screen" className="relative w-full h-1/5">
             <Screen />
           </div>

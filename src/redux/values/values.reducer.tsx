@@ -1,12 +1,16 @@
 import valuesTypes from "./values.types";
 
-const INITIAL_STATE = {
-    currentValue : null
-};
+const initialState = {
+    currentValue : '',
+}
+interface actionTypes {
+    type: String;
+    payload: String
+}
 
-const valueReducer = (state = INITIAL_STATE, action: any) => {
+const valueReducer = (state = initialState, action: actionTypes) => {
     switch (action.type) {
-        case valuesTypes.CHANGE_CURRENT_VALUE:
+        case valuesTypes.ADD_CURRENT_VALUE:
             return {
                 ...state,
                 currentValue : action.payload
