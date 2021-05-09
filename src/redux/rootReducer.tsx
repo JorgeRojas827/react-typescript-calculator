@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
-import valueReducer from './values/values.reducer'
+import addValueReducer from './values/values.reducer'
 
 export const rootReducer = combineReducers({
-    value: valueReducer,
+    value: addValueReducer,
 })
 
 export type RootState = ReturnType<typeof rootReducer>

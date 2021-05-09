@@ -8,7 +8,7 @@ interface actionTypes {
     payload: String
 }
 
-const valueReducer = (state = initialState, action: actionTypes) => {
+const addValueReducer = (state = initialState, action: actionTypes) => {
     switch (action.type) {
         case valuesTypes.ADD_CURRENT_VALUE:
             return {
@@ -20,4 +20,4 @@ const valueReducer = (state = initialState, action: actionTypes) => {
     };
 };
 
-export default valueReducer;
+export default addValueReducer;
