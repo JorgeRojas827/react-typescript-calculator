@@ -1,6 +1,6 @@
 export const operationRegEx = /(\s-\s)?[0-9]*\s(\+|x|\/|-)?\s[0-9]+/;
 export const singleOperationRegEx = /^[\d]*(?![\D])/;
-export const additionalOperationRegEx = /^[\d]*\s(x\^2|x\^1\/2|%|1\/x)/;
+export const additionalOperationRegEx = /^[\d]*\s(x\^2|x\^1\/2|%|1\/x|\+\/-)/;
 
 export const additionalOperation = (expression: Array<string>) => {
     let expressionArray = expression.join('').split(' ');
@@ -21,7 +21,9 @@ export const additionalOperation = (expression: Array<string>) => {
         case '%':
             return (firstValue / 100);
         case '1/x':
-            return (1 / firstValue).toFixed(2)
+            return (1 / firstValue).toFixed(2);
+        case '+/-':
+            return (- firstValue);
         default:
             return 0;
     }
