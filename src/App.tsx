@@ -1,8 +1,8 @@
 import { Fragment } from 'react';
-import { Screen } from './components/Screen';
-import { Keyboard } from './components/Keyboard';
+import { Screen } from './components/calculator/Screen';
+import { Keyboard } from './components/calculator/Keyboard';
 import './app.scss'
-import { Rightside } from './components/Rightside';
+import { Rightside } from './components/rightside/Rightside';
 
 function App() {
   return (
