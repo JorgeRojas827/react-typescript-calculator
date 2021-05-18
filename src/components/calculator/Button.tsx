@@ -1,4 +1,4 @@
-import './Root.scss'
+import '../Root.scss'
 
 export const Button = (values?: any) => {
 
