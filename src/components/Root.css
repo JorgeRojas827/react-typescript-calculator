@@ -1,0 +1,79 @@
+input:last-of-type {
+  background-color: #EC5990;
+  border-color: #EC5990;
+  color: white;
+}
+
+input:last-of-type:hover {
+  border-color: #da3e77;
+  background-color: #da3e77;
+}
+
+#delete {
+  background-color: #EC5990;
+  border-color: #EC5990;
+  -webkit-transition: all .1s ease-in;
+  transition: all .1s ease-in;
+  color: white;
+}
+
+#delete:hover {
+  border-color: #D1D5DB;
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px);
+}
+
+#delete:active {
+  background-color: #da3e77;
+}
+
+#delete:focus {
+  outline: none;
+}
+
+span {
+  position: absolute;
+  background-color: white;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  pointer-events: none;
+  border-radius: 50%;
+  -webkit-animation: dripples 1s linear infinite;
+          animation: dripples 1s linear infinite;
+}
+
+@-webkit-keyframes dripples {
+  0% {
+    width: 0px;
+    height: 0px;
+    opacity: .5;
+  }
+  100% {
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+  }
+}
+
+@keyframes dripples {
+  0% {
+    width: 0px;
+    height: 0px;
+    opacity: .5;
+  }
+  100% {
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+  }
+}
+
+#itemContainer::-webkit-scrollbar {
+  width: 4px;
+}
+
+#itemContainer::-webkit-scrollbar-thumb {
+  background: #848484;
+  border-radius: 5px;
+}
+/*# sourceMappingURL=Root.css.map */

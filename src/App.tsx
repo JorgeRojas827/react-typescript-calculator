@@ -1,13 +1,13 @@
 import { Fragment } from 'react';
 import { Screen } from './components/calculator/Screen';
 import { Keyboard } from './components/calculator/Keyboard';
-import './app.scss'
 import { Rightside } from './components/rightside/Rightside';
+import './app.css'
 
 function App() {
   return (
     <Fragment>
-      <div className="dark:bg-gray-900 w-screen h-screen flex flex-row justify-center items-center">
+      <div className="dark:bg-gray-800 w-screen h-screen flex flex-row justify-center items-center">
         <div id="calculator" className="bg-gray-200 px-5 pb-5 dark:bg-gray-700 rounded w-1/4 h-5/6">
           <div id = "screen" className="relative w-full h-1/5">
             <Screen />
