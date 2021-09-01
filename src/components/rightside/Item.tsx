@@ -1,7 +1,7 @@
 interface Props {
     expression: String,
     result: any,
-    deleteSelf: any
+    deleteSelf: () => void;
 }
 
 export const Item = (props: Props) => {
