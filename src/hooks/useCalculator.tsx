@@ -11,7 +11,7 @@ export var expressionsArray = [] as Array<any>;
 
 export const useCalculator = () => {
 
-    const [values, setValues] = useState([]);
+    const [buttonValues, setButtonValues] = useState([]);
     const [error, setError] = useState(false)
     var valuesArray = [] as Array<string>;
 
@@ -22,8 +22,8 @@ export const useCalculator = () => {
 
     const getData = async () => {
         try {
-            const res = await axios.get("https://api.jsonbin.io/b/60921cfdd64cd16802aab207/7");
-            setValues(res.data.botones);
+            const res = await axios.get("https://api.jsonbin.io/b/60921cfdd64cd16802aab207/13");
+            setButtonValues(res.data.botones);
         } catch (err) {
             console.log("ERROR: ", err);
         }
@@ -65,21 +65,22 @@ export const useCalculator = () => {
             changeExpression(expression, obtainSingleResults)
         } else if (testRegExp(singleOperationRegEx)) {
             changeExpression(expression, singleOperation)
-        }   else {
+        }
+         else {
             setError(true);
-            clearArray()    
+            clearArray();
             addValue('Syntax error')
         }   
     }
 
     const handleClick = ({ currentTarget }: MouseEvent<HTMLInputElement>) => {
-            const value = currentTarget.value;
-            error && clearArray(); setError(false)
-            !error && addValue(value);
+        const value = currentTarget.value;
+        error && clearArray(); setError(false)
+        !error && addValue(value);
     }
 
     return {
-        values,
+        buttonValues,
         valuesArray,
         error,
         expressionsArray,

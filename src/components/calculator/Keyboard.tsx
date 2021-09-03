@@ -8,11 +8,11 @@ interface valueInterface {
 
 export const Keyboard = () => {
     
-    const { values, calculateExpression, deleteLastItem, clearArray, handleClick } = useCalculator();
+    const { buttonValues, calculateExpression, deleteLastItem, clearArray, handleClick } = useCalculator();
 
     return (
         <div className="w-full h-full absolute grid grid-cols-4 gap-1 grid-flow-row ">
-            { values.map((el: valueInterface) => {
+            { buttonValues.map((el: valueInterface) => {
                 switch (el.key) {
                     case '23' :
                         return <Button

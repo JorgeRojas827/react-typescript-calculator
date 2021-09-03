@@ -10,9 +10,9 @@ export const obtainSingleResults = (expression: Array<string>) => {
         operator = expressionArray[1];
     }
     switch (operator) {
-        case 'x^2':
+        case 'x²':
             return (Math.pow(firstValue, 2)).toFixed(2);
-        case 'x^1/2':
+        case '√x':
             return (Math.sqrt(firstValue)).toFixed(2);
         case '%':
             return (firstValue / 100);
