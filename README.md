@@ -1,46 +1,53 @@
-# Getting Started with Create React App
+# React-Typescript Calculator  #
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Presentación 👋
 
-## Available Scripts
+Hola :) me alegra que vengas a este repositorio, este contenido ha sido realizado como práctica personal para estas tecnologías
 
-In the project directory, you can run:
+Mi práctica consistió en construir una calculadora practicando el uso de Redux para manejo de estado global
 
-### `npm start`
+## Muestra 👀
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+La calculadora tiene las funciones básicas de una calculadora y las operaciones se guardan en un historial.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Tiene tema claro y oscuro, cambiable con las configuraciones del sistema.
 
-### `npm test`
+Acá pueden ver cómo funciona la aplciación en web: 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+[Enlace a la aplicación](https://rt-calculator.netlify.app/)
 
-### `npm run build`
+- Tema claro: 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![](./src/assets/calculator-light.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Tema oscuro: 
+  
+![](./src/assets/calculator-dark.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Comencemos 🚀
 
-### `npm run eject`
+Para empezar ejecutemos los siguientes comandos en ese orden:
+~~~
+git clone https://github.com/JorgeRojas827/rt-calculator.git
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+cd rt-calculator
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+npm i
+~~~
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Y listo, puedes probar y jugar con el código :)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+## Construido con 🛠️
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- ### React JS
+- ### Typescript
+- ### Tailwind CSS
+- ### Redux
+- ### Axios
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Licencia 📄
+
+Este proyecto está bajo la Licencia (MIT).
+
+## ⌨️ con ❤️ por Jorge Rojas 🙌
